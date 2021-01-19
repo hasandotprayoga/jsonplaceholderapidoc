@@ -2,7 +2,7 @@ openapi: 3.0.0
 info:
   version: 1.0.0
   title: JSONPlaceholder
-  description: A JSONPlaceholder API documentation
+  description: A JSONPlaceholder API documentation Test Update
 servers:
   - url: 'https://jsonplaceholder.typicode.com'
 paths:
