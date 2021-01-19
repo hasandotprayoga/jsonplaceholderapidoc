@@ -1,0 +1,49 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: JSONPlaceholder
+  description: A JSONPlaceholder API documentation
+servers:
+  - url: 'https://jsonplaceholder.typicode.com'
+paths:
+  /posts:
+    get:
+      summary: ''
+      description: ''
+      operationId: ''
+      responses:
+        default:
+          description: Default error sample response
+          content:
+            application/json:
+              examples:
+                Success:
+                  value: |-
+                    [
+                      {
+                        "userId": 1,
+                        "id": 1,
+                        "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+                        "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+                      },
+                      {
+                        "userId": 5,
+                        "id": 45,
+                        "title": "ut numquam possimus omnis eius suscipit laudantium iure",
+                        "body": "est natus reiciendis nihil possimus aut provident\nex et dolor\nrepellat pariatur est\nnobis rerum repellendus dolorem autem"
+                      },
+                    ]
+  '/posts/{id}':
+    get:
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      summary: ''
+      description: ''
+      operationId: ''
+      responses:
+        default:
+          description: Default error sample response
