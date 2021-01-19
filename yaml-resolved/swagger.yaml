@@ -1,16 +1,15 @@
 openapi: 3.0.0
 info:
-  version: 1.0.0
   title: JSONPlaceholder
   description: A JSONPlaceholder API documentation
+  version: 1.0.0
 servers:
-  - url: 'https://jsonplaceholder.typicode.com'
+- url: https://virtserver.swaggerhub.com/hasandotprayoga/jsonplaceholder/1.0.0
+  description: SwaggerHub API Auto Mocking
+- url: https://jsonplaceholder.typicode.com
 paths:
   /posts:
     get:
-      summary: ''
-      description: ''
-      operationId: ''
       responses:
         default:
           description: Default error sample response
@@ -33,17 +32,17 @@ paths:
                         "body": "est natus reiciendis nihil possimus aut provident\nex et dolor\nrepellat pariatur est\nnobis rerum repellendus dolorem autem"
                       },
                     ]
-  '/posts/{id}':
+  /posts/{id}:
     get:
       parameters:
-        - name: id
-          in: path
-          required: true
-          schema:
-            type: string
-      summary: ''
-      description: ''
-      operationId: ''
+      - name: id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
       responses:
         default:
           description: Default error sample response
+components: {}
